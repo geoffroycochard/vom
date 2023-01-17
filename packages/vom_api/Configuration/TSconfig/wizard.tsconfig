@@ -1,0 +1,11 @@
+mod.wizards.newContentElement.wizardItems.plugins.elements {
+    vomapi_exampleplugin {
+        iconIdentifier = vomapi-icon
+        title = LLL:EXT:vomapi/Resources/Private/Language/locallang_plugins.xlf:exampleplugin.title
+        description = LLL:EXT:vomapi/Resources/Private/Language/locallang_plugins.xlf:exampleplugin.description
+        tt_content_defValues {
+            CType = list
+            list_type = vomapi_exampleplugin
+        }
+    }
+}

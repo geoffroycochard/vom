@@ -1,0 +1,25 @@
+#
+# TCEFORM
+#
+TCEFORM {
+    pages {
+
+    }
+    tt_content {
+        layout {
+            #keepItems =
+            types {
+                menu_pages.addItems {
+                    100 = As block
+                    110 = As cards
+                    120 = As cards with first
+                }
+                vom_site_package_menu_pages_news.addItems {
+                    100 = As block
+                    110 = As cards
+                    120 = As cards with first
+                }
+            }
+        }
+    }
+}

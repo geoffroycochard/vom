@@ -1,0 +1,17 @@
+---
+10:
+  mode: new
+  structure: 
+    CType: text
+    header: Les atouts
+    bodytext: '<p>hello somme content</p>'
+20:
+  mode: new
+  structure: 
+    CType: Les atouts
+    header: Hello 2
+    bodytext: '<p>hello somme content</p>'
+30:
+  mode: from
+  uid: 9938
+  

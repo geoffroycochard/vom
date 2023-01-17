@@ -1,0 +1,40 @@
+---
+10:
+  mode: from
+  uid: 587
+
+20:
+  mode: from
+  uid: 587
+
+30:
+  mode: new
+  structure: 
+    CType: text
+    header: 3 fois moins de CO²
+    bodytext: >
+      TAO émet 3 fois moins de CO² pour réaliser un voyage que votre voiture : en moyenne, 1 voyage effectué sur le réseau émet 423g de CO², contre XXXg de CO² en voiture.
+
+40:
+  mode: from
+  uid: 587
+
+50:
+  mode: new
+  structure:
+    CType: menu_pages
+    header: Les services les + demandés
+    pages: 130,140,150,160,170
+
+60:
+  mode: new
+  structure:
+    CType: menu_pages
+    header: A savoir sur la mobilité
+    pages: 240,230,210,220
+        
+
+# jvMalin    
+100:
+  mode: from
+  uid: 4042

@@ -1,0 +1,57 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:vom_site_package/Configuration/TypoScript/ContentElement/Element/MenuPagesNews.typoscript">
+
+lib.contentElement {
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = Default
+    templateRootPaths {
+        0 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements/
+        10 = EXT:vom_site_package/Resources/Private/Templates/ContentElements/
+        20 = {$plugin.bootstrap_package_contentelements.view.templateRootPath}
+    }
+    partialRootPaths {
+        0 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
+        10 = EXT:vom_site_package/Resources/Private/Partials/ContentElements/
+        20 = {$plugin.bootstrap_package_contentelements.view.partialRootPath}
+    }
+    layoutRootPaths {
+        0 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements/
+        10 = EXT:vom_site_package/Resources/Private/Layouts/ContentElements/
+        20 = {$plugin.bootstrap_package_contentelements.view.layoutRootPath}
+    }
+}
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSS {
+        theme = EXT:vom_site_package/Resources/Public/Scss/Theme/theme.scss
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        vom_site_package_scripts = EXT:vom_site_package/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}
+
+
+config.contentObjectExceptionHandler = 0

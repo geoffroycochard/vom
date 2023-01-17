@@ -1,0 +1,21 @@
+#####################
+#### CTYPE: MENU ####
+#####################
+
+tt_content.vom_site_package_menu_pages_news >
+tt_content.vom_site_package_menu_pages_news =< lib.contentElement
+tt_content.vom_site_package_menu_pages_news {
+
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = MenuPagesNews
+
+    ##########################
+    ### DATA PREPROCESSING ###
+    ##########################
+    dataProcessing {
+        10 = OrleansMetropole\VomSitePackage\DataProcessing\MenuPagesNewsProcessor
+    }
+
+}

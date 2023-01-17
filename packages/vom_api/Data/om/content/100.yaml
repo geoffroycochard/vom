@@ -1,0 +1,53 @@
+---
+10:
+  mode: new
+  structure: 
+    CType: text
+    header: Un réseau de transport engagé
+    bodytext: >
+      <p>La Métropole a délégué la gestion du réseau TAO à la société Keolis Métropole Orléans, filiale du groupe Keolis, 
+      qui s’engage à réduire l’empreinte environnementale de ses activités en travaillant sur 4 axes : 
+      réduire les émissions des polluants et gaz à effet de serre, prévenir les risques de pollution, 
+      réduire les consommations de matières premières et d’énergie et optimiser la gestion des déchets.</p>
+20:
+  mode: new
+  structure:
+    CType: text
+    header: 3 fois moins de CO²
+    bodytext: >
+      TAO émet 3 fois moins de CO² pour réaliser un voyage que votre voiture : en moyenne, 1 voyage effectué sur le réseau émet 423g de CO², contre XXXg de CO² en voiture.
+30:
+  mode: new
+  structure: 
+    CType: text
+    header: 3 fois moins de CO²
+    bodytext: >
+      TAO émet 3 fois moins de CO² pour réaliser un voyage que votre voiture : en moyenne, 1 voyage effectué sur le réseau émet 423g de CO², contre XXXg de CO² en voiture.
+40:
+  mode: new
+  structure: 
+    CType: text
+    header: 3 fois moins de CO²
+    bodytext: >
+      TAO émet 3 fois moins de CO² pour réaliser un voyage que votre voiture : en moyenne, 1 voyage effectué sur le réseau émet 423g de CO², contre XXXg de CO² en voiture.
+50:
+  mode: new
+  structure:
+    CType: menu_pages
+    header: Les services les + demandés
+    layout: 100
+    pages: 130,140,150,160,170
+
+60:
+  mode: new
+  structure:
+    CType: vom_site_package_menu_pages_news
+    header: En savoir + sur la mobilité
+    layout: 120
+    pages: pages_200,pages_240,tx_news_domain_model_news_8290,tx_news_domain_model_news_7920,pages_230,pages_210,pages_220
+        
+
+# jvMalin    
+100:
+  mode: from
+  uid: 4042

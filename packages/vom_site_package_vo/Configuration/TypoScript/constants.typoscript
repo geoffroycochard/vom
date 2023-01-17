@@ -1,0 +1,60 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:vom_site_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+        file = EXT:vom_site_package_vo/Resources/Public/Images/logo.svg
+        fileInverted = EXT:vom_site_package_vo/Resources/Public/Images/logo-inverted.svg
+        height = 52
+        width = 192
+        alt = VoM Site Package Vo
+        linktitle = VoM Site Package Vo
+    }
+    favicon {
+        file = EXT:vom_site_package_vo/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:vom_site_package_vo/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:vom_site_package_vo/Resources/Private/Partials/Page/
+        templateRootPath = EXT:vom_site_package_vo/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:vom_site_package_vo/Resources/Private/Layouts/
+        partialRootPath = EXT:vom_site_package_vo/Resources/Private/Partials/
+        templateRootPath = EXT:vom_site_package_vo/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:vom_site_package_vo/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:vom_site_package_vo/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:vom_site_package_vo/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+################################
+### BOOTSTRAP SCSS CONSTANTS ###
+################################
+plugin.bootstrap_package.settings.scss {
+    primary = #eb3e4a
+    secondary = #013859
+}

@@ -1,0 +1,21 @@
+{
+    "name": "orleans-metropole/vom-site-package-vo",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://www.orleans.fr",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "bk2k/bootstrap-package": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OrleansMetropole\\VomSitePackageVo\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "vom_site_package_vo"
+        }
+    }
+}

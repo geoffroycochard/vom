@@ -1,0 +1,17 @@
+base: 'http://typo3mig.test/ville-orleans'
+languages:
+  -
+    title: French
+    enabled: true
+    base: /
+    typo3Language: fr
+    locale: fr_FR.utf8
+    iso-639-1: fr
+    websiteTitle: ''
+    navigationTitle: French
+    hreflang: fr-fr
+    direction: ltr
+    flag: fr
+    languageId: 0
+rootPageId: 4
+websiteTitle: 'Ville d''Orléans'

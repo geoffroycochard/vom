@@ -1,0 +1,28 @@
+{
+    "name": "vom/vom-api",
+    "type": "typo3-cms-extension",
+    "authors": [
+        {
+            "name": "",
+            "email": "geoffroy.cochard@orleans-metropole.fr"
+        }
+    ],
+    "require-dev": {
+        "helmich/typo3-typoscript-lint": "^2",
+        "nimut/testing-framework": "^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vom\\Vomapi\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vom\\Vomapi\\Tests\\": "Tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit -c vendor/nimut/testing-framework/res/Configuration/UnitTests.xml --coverage-text --whitelist Classes Tests/Unit",
+        "typoscript-lint": "typoscript-lint"
+    }
+}

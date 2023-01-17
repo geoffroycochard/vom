@@ -1,0 +1,26 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+    
+  Vom\Vomapi\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+    
+  Vom\Vomapi\Command\PageImport:
+    tags:
+      - name: console.command
+        command: 'vom:pages'
+  Vom\Vomapi\Command\ContentImport:
+    tags:
+      - name: console.command
+        command: 'vom:content'
+  Vom\Vomapi\Command\YamlGenerator:
+    tags:
+      - name: console.command
+        command: 'vom:yaml'
+  Vom\Vomapi\Command\SQLImportFromDatabase:
+    tags:
+      - name: console.command
+        command: 'vom:sqlimport-from-db'

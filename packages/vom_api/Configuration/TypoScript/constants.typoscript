@@ -1,0 +1,19 @@
+plugin.tx_vomapi {
+    # customsubcategory=view=View
+    view {
+        # cat=Vomapi/view; type=string; label=Path to templates
+        templateRootPath =
+
+        # cat=Vomapi/view; type=string; label=Path to template partials
+        partialRootPath =
+
+        # cat=Vomapi/view; type=string; label=Path to template layouts
+        layoutRootPath =
+    }
+
+    # customsubcategory=settings=Settngs
+    settings {
+        # cat=Vomapi/settings; type=int+; label=Storage Page ID
+        storagePid =
+    }
+}

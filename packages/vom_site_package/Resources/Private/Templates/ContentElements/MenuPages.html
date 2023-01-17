@@ -1,0 +1,70 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <f:if condition="{menu}">
+        <f:render partial="Menu/SkipNavigation" arguments="{_all}" />
+        <f:switch expression="{data.layout}">
+            <!-- Default -->
+            <f:case value="0">
+                <ul>
+                    <f:for each="{menu}" as="page">
+                        <li>
+                            <a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')} title="{page.title}">T{page.title}</a>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:case>
+            <!-- As block -->
+            <f:case value="100">
+                <div class="row">
+                    <f:for each="{menu}" as="page">
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3>{page.title}</h3>
+                                    <a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')} title="{page.title}">En savoir +</a>
+                                </div>
+                            </div>
+                        </div>
+                    </f:for>
+                </div>
+            </f:case>
+            <!-- As cards -->
+            <f:case value="110">
+                <div class="row">
+                    <f:for each="{menu}" as="page">
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3>{page.title}</h3>
+                                    <a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')} title="{page.title}">En savoir +</a>
+                                </div>
+                            </div>
+                        </div>
+                    </f:for>
+                </div>
+            </f:case>
+            <!-- As cards with first -->
+            <f:case value="120">
+                    <f:for each="{menu}" as="page" iteration="iterator">
+                        <f:if condition="{iterator.index} == 1"><div class="row"></f:if>
+                        <f:if condition="!{iterator.isFirst}"><div class="col-sm-4"></f:if>
+                            <div class="card">
+                                <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">{page.title}</h3>
+                                    <a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')} title="{page.title}" class="btn btn-primary">En savoir +</a>
+                                </div>
+                            </div>
+                        <f:if condition="!{iterator.isFirst}"></div></f:if>    
+                        <f:if condition="{iterator.isLast}"></div></f:if>
+                    </f:for>
+
+            </f:case>
+        </f:switch>
+
+    </f:if>
+
+</f:section>
+</html>

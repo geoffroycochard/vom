@@ -1,0 +1,17 @@
+base: 'http://typo3mig.test/metropole-orleans/'
+languages:
+  -
+    title: French
+    enabled: true
+    languageId: 0
+    base: /
+    typo3Language: fr
+    locale: fr_FR.utf8
+    iso-639-1: fr
+    navigationTitle: French
+    hreflang: fr-fr
+    direction: ltr
+    flag: fr
+    websiteTitle: ''
+rootPageId: 3
+websiteTitle: 'Métropole d''Orléans'

@@ -1,0 +1,7 @@
+#
+# PageTS for VoM Site Package Vo
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:vom_site_package_vo/Configuration/TsConfig/Page/RTE.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:vom_site_package_vo/Configuration/TsConfig/Page/TCEFORM.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:vom_site_package_vo/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:vom_site_package_vo/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
