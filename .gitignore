@@ -67,6 +67,8 @@ nbproject
 /fileadmin/*
 /uploads/*
 /FIRST_INSTALL
+/public
+/var
 #
 # root .htaccess file
 /.htaccess
